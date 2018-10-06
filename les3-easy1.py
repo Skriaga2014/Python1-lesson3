@@ -1,4 +1,6 @@
 def my_round(number, ndigits):
+    number = str(number)                                                    #number преобразуется в строку
+                                                                            #(на случай, если функции передано число)
     number = number.split(".")                                              #Разбиваем число на ДО точки и ПОСЛЕ.
     if int(ndigits) >= len(number[1]):                                      #Если ndigits >= длины числа после точки:
         return number[0] + "." + number[1]                                  #Вернуть введенное число number
@@ -24,6 +26,8 @@ a = input("Введите дробное число (при английской
 b = input("До какого знака после запятой следует округлить: ")
 
 print(my_round(a, b))
-
+print(my_round(2.1234567, 5))
+print(my_round(2.1999967, 5))
+print(my_round(2.9999967, 5))
 
 
