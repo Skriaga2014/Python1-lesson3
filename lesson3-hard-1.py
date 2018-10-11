@@ -121,4 +121,4 @@ print (summ(drob(list[0]),drob(list[1]), znak))
 #    print(list[0], znak, list[1])
 #    print(summ(drob(list[0]), drob(list[1]), znak))
 
-
+#
